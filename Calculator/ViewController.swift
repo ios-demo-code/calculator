@@ -154,7 +154,7 @@ class ViewController: UIViewController {
                 }else if value < 0.0 {
                     result = 0 - value
                 }
-                firstOperand = "\(result)"
+                firstOperand = String(format: "%g", result)
                 self.resultLabel.text = firstOperand
             }
         }else {
@@ -166,7 +166,7 @@ class ViewController: UIViewController {
                 }else if value < 0.0 {
                     result = 0 - value
                 }
-                secondOperand = "\(result)"
+                secondOperand = String(format: "%g", result)
                 self.resultLabel.text = secondOperand
             }
         }
